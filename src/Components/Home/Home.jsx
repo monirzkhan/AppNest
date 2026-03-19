@@ -1,8 +1,11 @@
 import { Download, Play, Star } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
+
 
 const Home = () => {
+    const appData = useLoaderData();
+
     return (
         <div>
             {/* Apps Banner  */}
@@ -62,7 +65,7 @@ const Home = () => {
                                     <div className="stat-desc">46% more than last month</div>
                                 </div>
 
-                                <Star/>
+                                <Star />
                             </div>
                         </div>
 
@@ -75,11 +78,16 @@ const Home = () => {
                                     <div className="stat-desc">31 more will Launch</div>
                                 </div>
 
-                              <Play/>
+                                <Play />
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* Trending Apps  */}
+            <div>
+                <h1>{appData.length}</h1>
             </div>
         </div>
     );
