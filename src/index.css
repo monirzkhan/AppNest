@@ -15,3 +15,11 @@ body{
   /* themes: light --default, dark --prefersdark; */
   themes: lemonade --default;
  }
+
+ .active{
+  text-decoration: underline;
+  text-decoration-color: green;
+  color: blueviolet;
+  text-decoration-thickness: 4px;
+  
+ }

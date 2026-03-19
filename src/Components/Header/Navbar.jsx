@@ -1,4 +1,4 @@
-import { Github } from 'lucide-react';
+import { Github, House, MonitorDown, Play } from 'lucide-react';
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 
@@ -18,19 +18,19 @@ const Navbar = () => {
                         <li><NavLink to={'/installation'}>Installation</NavLink></li>
                     </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost text-xl text-primary"><span>
+                <Link to={'/'} className="btn btn-ghost text-2xl text-primary"><span>
                     <img src="/src/assets/logo.png" width={'30px'} alt="" />
                 </span>AppNest</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><NavLink to={'/'}>Home</NavLink></li>
-                    <li><NavLink to={'/apps'}>Apps</NavLink></li>
-                    <li><NavLink to={'/installation'}>Installation</NavLink></li>
+                <ul className="menu menu-horizontal px-1 space-x-4 text-xl">
+                    <li><NavLink to={'/'}><span><House></House></span>Home</NavLink></li>
+                    <li><NavLink to={'/apps'}><Play></Play>Apps</NavLink></li>
+                    <li><NavLink to={'/installation'}><MonitorDown></MonitorDown>Installation</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-secondary"><span><Github></Github></span>Contribute</a>
+                <a className="btn btn-primary text-white"><span><Github></Github></span>Contribute</a>
             </div>
         </div>
     );
