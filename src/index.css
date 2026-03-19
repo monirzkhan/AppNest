@@ -18,8 +18,9 @@ body{
 
  .active{
   text-decoration: underline;
-  text-decoration-color: green;
+  text-decoration-color: rgb(94, 213, 94);
   color: blueviolet;
-  text-decoration-thickness: 4px;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
   
  }
