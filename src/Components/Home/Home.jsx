@@ -22,11 +22,11 @@ const Home = () => {
                         <div className='flex gap-4 justify-center py-6'>
                             <Link to={'https://play.google.com/store/games?hl=en'} target='blank'>
                                 <button className="btn md:text-xl text-white btn-secondary sm:px-4 sm:py-4 md:px-6 md:py-6">
-                                    <img width={'40px'} src="https://img.icons8.com/?size=96&id=rZwnRdJyYqRi&format=png" alt="" />Google Play</button>
+                                    <img width={'40px'} src="/src/assets/play.png" alt="" />Google Play</button>
                             </Link>
                             <Link to={'https://www.apple.com/app-store/'} target='blank'>
                                 <button className="btn md:text-xl text-white btn-secondary sm:px-4 sm:py-4 md:px-6 md:py-6">
-                                    <img width={'40px'} src="https://img.icons8.com/?size=160&id=FY7tVsFoeON4&format=png" alt="" />App Store</button>
+                                    <img width={'40px'} src="/src/assets/appstore.png" alt="" />App Store</button>
                             </Link>
 
                         </div>
@@ -87,9 +87,9 @@ const Home = () => {
             </div>
 
             {/* Trending Apps  */}
-           <div className='bg-base-800'>
+           <div className='bg-base-800 py-4'>
              <div className='text-center py-10'>
-                <h1 className='font-bold text-4xl '>Trending Apps</h1>
+                <h1 className='font-extrabold text-5xl '>Trending Apps</h1>
                 <p className='italic text-lg py-4'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='grid lg:grid-cols-4  gap-8 w-11/12 mx-auto'>
@@ -97,6 +97,9 @@ const Home = () => {
                     appData.slice(0,8).map(app=><AppCard key={app.id} app={app}></AppCard>)
                 }
             </div>
+           <div className='w-full mx-auto text-center py-12'>
+             <Link to={'apps'} className=''><button className='btn text-white btn-secondary px-4 text-center'>Show All</button></Link>
+           </div>
            </div>
         </div>
     );
