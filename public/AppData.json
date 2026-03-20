@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://via.placeholder.com/150",
+    "image": "/src/assets/Chat_flow.jpg",
     "title": "ChatFlow AI",
     "companyName": "Nexlify Labs",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://via.placeholder.com/150",
+    "image": "/src/assets/TaskZen.jpg",
     "title": "TaskZen",
     "companyName": "AppVanta",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://via.placeholder.com/150",
+    "image": "/src/assets/FitTrack Pro.jpg",
     "title": "FitTrack Pro",
     "companyName": "Corelio",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://via.placeholder.com/150",
+    "image": "/src/assets/NoteSnap.png",
     "title": "NoteSnap",
     "companyName": "Zentrix Apps",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://via.placeholder.com/150",
+    "image": "/src/assets/Travelmet.png",
     "title": "TravelMate",
     "companyName": "Orbixa",
     "id": 5,
