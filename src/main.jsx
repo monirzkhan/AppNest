@@ -32,12 +32,11 @@ const router = createBrowserRouter([
 
       },
       {
-        path: 'app/:id',
+        path: 'app/:appId',
         Component: AppDetails,
         loader:async({params})=>{
           const res=await axios.get('/AppData.json');
-          const app=res.data.find((p)=>p.id===parseInt(params.id));
-          
+          const app=res.data.find((p)=>p.id===parseInt(params.appId));
           return app;
         }, 
        

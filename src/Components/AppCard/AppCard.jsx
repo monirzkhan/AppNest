@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const AppCard = ({ app }) => {
 
     return (
-        <Link to={`app/${app.id}`}>
+        <Link to={`/app/${app.id}`}>
         <div className='hover-3d '>
             <div className="card  w-96 shadow-xl ">
                 <figure className=''>
