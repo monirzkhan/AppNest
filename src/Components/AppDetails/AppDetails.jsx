@@ -1,7 +1,7 @@
 import { Download, Star, ThumbsUp } from 'lucide-react';
 import React from 'react';
 import { Link, useLoaderData } from 'react-router';
-import { Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const AppDetails = () => {
     const appDetailsData = useLoaderData();
