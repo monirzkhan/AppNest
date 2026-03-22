@@ -21,11 +21,11 @@ const Home = () => {
                         </div>
                         <div className='flex gap-4 justify-center py-6'>
                             <Link to={'https://play.google.com/store/games?hl=en'} target='blank'>
-                                <button className="btn md:text-xl text-white btn-secondary sm:px-4 sm:py-4 md:px-6 md:py-6">
+                                <button className="btn md:text-xl text-white btn-secondary sm:btn-lg">
                                     <img width={'40px'} src="/src/assets/play.png" alt="" />Google Play</button>
                             </Link>
                             <Link to={'https://www.apple.com/app-store/'} target='blank'>
-                                <button className="btn md:text-xl text-white btn-secondary sm:px-4 sm:py-4 md:px-6 md:py-6">
+                                <button className="btn md:text-xl text-white btn-secondary sm:btn-lg">
                                     <img width={'40px'} src="/src/assets/appstore.png" alt="" />App Store</button>
                             </Link>
 

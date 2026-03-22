@@ -1,10 +1,10 @@
 [
   {
     "image": "/src/assets/Chat_flow.jpg",
-    "title": "ChatFlow AI",
+    "title": "ChatFlow AI - Smart Chat Assistant",
     "companyName": "Nexlify Labs",
     "id": 1,
-    "description": "Smart AI chatbot for instant communication and automation.",
+    "description": "ChatFlow AI is a next-generation conversational assistant built to transform how users interact with digital platforms. Powered by advanced artificial intelligence and natural language processing, it allows users to communicate effortlessly and receive accurate, real-time responses. Whether you need quick answers, automation, or daily task support, ChatFlow AI delivers a seamless and intelligent experience.\n\nThe app is designed with a clean and intuitive interface, making it accessible for users of all levels. From handling customer queries to assisting with personal productivity, ChatFlow AI adapts to different use cases efficiently. Its machine learning capabilities enable it to continuously improve and personalize responses based on user behavior.\n\nBusinesses can leverage ChatFlow AI to automate support systems, enhance engagement, and reduce operational workload. The app also ensures strong data privacy and security, protecting user information at all times.\n\nWith regular updates and feature enhancements, ChatFlow AI remains reliable and future-ready. Whether you're an individual seeking convenience or a business aiming for automation, ChatFlow AI offers a powerful, flexible, and smart communication solution.",
     "size": 45,
     "reviews": 1200,
     "ratingAvg": 4.5,
@@ -19,10 +19,10 @@
   },
   {
     "image": "/src/assets/TaskZen.jpg",
-    "title": "TaskZen",
+    "title": "TaskZen - Focus Work Manager",
     "companyName": "AppVanta",
     "id": 2,
-    "description": "Organize tasks and boost productivity with smart reminders.",
+    "description": "TaskZen is a powerful productivity application designed to help users organize, manage, and complete their daily tasks efficiently. It offers a clean and distraction-free interface that allows users to focus on what truly matters. Whether you're managing personal tasks or complex projects, TaskZen provides all the tools you need to stay organized.\n\nUsers can create task lists, set deadlines, prioritize activities, and receive reminders. The app also supports task categorization and progress tracking, giving users a clear overview of their productivity. Its smart scheduling feature helps optimize time management and improve workflow efficiency.\n\nTaskZen also includes collaboration features, enabling teams to assign tasks, share updates, and work together seamlessly. Cloud synchronization ensures that your data is always accessible across devices.\n\nWith continuous updates and performance improvements, TaskZen remains a reliable solution for productivity management. Whether you're a student, professional, or entrepreneur, TaskZen empowers you to stay focused, organized, and productive.",
     "size": 30,
     "reviews": 900,
     "ratingAvg": 4.3,
@@ -37,10 +37,10 @@
   },
   {
     "image": "/src/assets/FitTrack Pro.jpg",
-    "title": "FitTrack Pro",
+    "title": "FitTrack Pro - Smart Fitness Tracker",
     "companyName": "Corelio",
     "id": 3,
-    "description": "Track workouts, calories, and stay fit with real-time stats.",
+    "description": "FitTrack Pro is a comprehensive fitness application designed to help users achieve their health goals. It allows users to track workouts, monitor calories, and analyze performance metrics in real time. Whether you're a beginner or an advanced athlete, FitTrack Pro adapts to your fitness journey.\n\nThe app supports various activities such as cardio, strength training, and daily step tracking. Users can set goals, view progress charts, and stay motivated with reminders. Integration with wearable devices enhances accuracy and provides deeper insights into health data.\n\nFitTrack Pro also offers personalized workout plans and health tips to improve overall well-being. Its user-friendly interface ensures easy navigation and efficient tracking.\n\nWith secure data storage and continuous updates, FitTrack Pro is a reliable fitness companion that helps users stay active, healthy, and motivated every day.",
     "size": 55,
     "reviews": 1500,
     "ratingAvg": 4.6,
@@ -55,10 +55,10 @@
   },
   {
     "image": "/src/assets/NoteSnap.png",
-    "title": "NoteSnap",
+    "title": "NoteSnap - Quick Note Capture",
     "companyName": "Zentrix Apps",
     "id": 4,
-    "description": "Capture notes quickly with voice and image recognition.",
+    "description": "NoteSnap is a smart note-taking application designed for fast and efficient information capture. It allows users to create notes using text, voice, or images, making it ideal for capturing ideas on the go.\n\nThe app features an intuitive interface, enabling users to organize notes into categories and search them easily. Voice-to-text functionality and image recognition enhance usability and save time.\n\nNoteSnap supports cloud synchronization, ensuring your notes are accessible across devices. It is perfect for students, professionals, and creatives.\n\nWith regular updates and secure storage, NoteSnap provides a reliable and efficient note-taking experience.",
     "size": 25,
     "reviews": 700,
     "ratingAvg": 4.2,
@@ -73,10 +73,10 @@
   },
   {
     "image": "/src/assets/Travelmet.png",
-    "title": "TravelMate",
+    "title": "TravelMate - Easy Trip Planner",
     "companyName": "Orbixa",
     "id": 5,
-    "description": "Plan trips, find hotels, and explore destinations easily.",
+    "description": "TravelMate is a complete travel planning solution that helps users organize trips effortlessly. It provides tools for booking, itinerary planning, and discovering destinations.\n\nUsers can explore travel options, manage bookings, and receive recommendations. The app simplifies travel planning and enhances the overall experience.\n\nWith a user-friendly interface and smart suggestions, TravelMate ensures smooth and enjoyable journeys.",
     "size": 60,
     "reviews": 1800,
     "ratingAvg": 4.7,
@@ -89,12 +89,13 @@
       { "name": "5 star", "count": 910 }
     ]
   },
+
   {
     "image": "/src/assets/Foodify.png",
-    "title": "Foodify",
+    "title": "Foodify - Fast Food Delivery",
     "companyName": "AppMint",
     "id": 6,
-    "description": "Order food online from your favorite restaurants.",
+    "description": "Foodify is an online food delivery platform that connects users with their favorite restaurants. It offers fast ordering, secure payments, and real-time tracking.\n\nUsers can browse menus, place orders, and enjoy quick delivery services.\n\nFoodify ensures a smooth and convenient food ordering experience.",
     "size": 40,
     "reviews": 2100,
     "ratingAvg": 4.4,
@@ -107,12 +108,13 @@
       { "name": "5 star", "count": 850 }
     ]
   },
+
   {
     "image": "/src/assets/MoneyWise.png",
-    "title": "MoneyWise",
+    "title": "MoneyWise - Personal Finance Manager",
     "companyName": "DevSphere",
     "id": 7,
-    "description": "Manage expenses and track your financial goals.",
+    "description": "MoneyWise helps users manage their finances efficiently. It tracks expenses, budgets, and financial goals.\n\nUsers can analyze spending patterns and plan savings.\n\nMoneyWise offers a simple and secure way to handle personal finances.",
     "size": 35,
     "reviews": 1100,
     "ratingAvg": 4.5,
@@ -125,12 +127,13 @@
       { "name": "5 star", "count": 460 }
     ]
   },
+
   {
     "image": "/src/assets/PhotoMaster.png",
-    "title": "PhotoMaster",
+    "title": "PhotoMaster - Pro Photo Editor",
     "companyName": "Veltrix",
     "id": 8,
-    "description": "Edit photos professionally with advanced tools.",
+    "description": "PhotoMaster is a professional photo editing app with advanced tools and filters.\n\nUsers can enhance images, apply effects, and create stunning visuals.\n\nIt offers a complete editing solution for beginners and professionals.",
     "size": 75,
     "reviews": 2500,
     "ratingAvg": 4.8,
@@ -143,12 +146,13 @@
       { "name": "5 star", "count": 1350 }
     ]
   },
+
   {
     "image": "/src/assets/WeatherNow.png",
-    "title": "WeatherNow",
+    "title": "WeatherNow - Live Weather Updates",
     "companyName": "AppPilot",
     "id": 9,
-    "description": "Real-time weather updates and forecasts worldwide.",
+    "description": "WeatherNow provides real-time weather forecasts and updates.\n\nUsers can track temperature, rainfall, and conditions easily.\n\nIt ensures accurate and timely weather information.",
     "size": 20,
     "reviews": 950,
     "ratingAvg": 4.1,
@@ -161,12 +165,13 @@
       { "name": "5 star", "count": 280 }
     ]
   },
+
   {
     "image": "/src/assets/EduSmart-1.png",
-    "title": "EduSmart",
+    "title": "EduSmart - Learn Skills Easily",
     "companyName": "InnovaApps",
     "id": 10,
-    "description": "Learn new skills with interactive courses and quizzes.",
+    "description": "EduSmart is an educational platform offering interactive courses.\n\nUsers can learn new skills and track progress.\n\nIt provides a flexible and engaging learning experience.",
     "size": 65,
     "reviews": 1700,
     "ratingAvg": 4.6,
@@ -179,12 +184,13 @@
       { "name": "5 star", "count": 850 }
     ]
   },
+
   {
     "image": "/src/assets/GameHub.png",
-    "title": "GameHub",
+    "title": "GameHub - Discover Play Games",
     "companyName": "Trionex Apps",
     "id": 11,
-    "description": "Play and discover trending mobile games in one place.",
+    "description": "GameHub is a platform to explore trending games.\n\nUsers can discover, play, and review games.\n\nIt provides a fun and engaging gaming experience.",
     "size": 90,
     "reviews": 3000,
     "ratingAvg": 4.7,
@@ -197,12 +203,13 @@
       { "name": "5 star", "count": 1550 }
     ]
   },
+
   {
-    "image":"/src/assets/SecureVPN.png",
-    "title": "SecureVPN",
+    "image": "/src/assets/SecureVPN.png",
+    "title": "SecureVPN - Private Safe Browsing",
     "companyName": "Zyphra Apps",
     "id": 12,
-    "description": "Fast and secure VPN for private internet browsing.",
+    "description": "SecureVPN ensures private and secure internet browsing.\n\nUsers can access restricted content safely.\n\nIt provides fast and reliable VPN services.",
     "size": 28,
     "reviews": 2200,
     "ratingAvg": 4.5,
@@ -215,12 +222,13 @@
       { "name": "5 star", "count": 1040 }
     ]
   },
+
   {
     "image": "/src/assets/MusicWave.png",
-    "title": "MusicWave",
+    "title": "MusicWave - Stream Music Anywhere",
     "companyName": "Fluxora",
     "id": 13,
-    "description": "Stream unlimited music with high-quality audio.",
+    "description": "MusicWave allows users to stream music seamlessly.\n\nUsers can explore playlists and enjoy high-quality audio.\n\nIt delivers an immersive music experience.",
     "size": 50,
     "reviews": 2700,
     "ratingAvg": 4.6,
@@ -233,12 +241,13 @@
       { "name": "5 star", "count": 1300 }
     ]
   },
+
   {
     "image": "/src/assets/ShopEase.png",
-    "title": "ShopEase",
+    "title": "ShopEase - Smart Online Shopping",
     "companyName": "AppForgeX",
     "id": 14,
-    "description": "Shop online with best deals and fast delivery.",
+    "description": "ShopEase provides an easy online shopping experience.\n\nUsers can browse products and enjoy fast delivery.\n\nIt ensures convenience and great deals.",
     "size": 48,
     "reviews": 3100,
     "ratingAvg": 4.4,
@@ -251,12 +260,13 @@
       { "name": "5 star", "count": 1250 }
     ]
   },
+
   {
     "image": "/src/assets/ScanPro.png",
-    "title": "ScanPro",
+    "title": "ScanPro - Instant Scan Phone",
     "companyName": "AppNest",
     "id": 15,
-    "description": "Scan documents and convert to PDF instantly.",
+    "description": "ScanPro is a document scanning app that converts files into digital format instantly.\n\nUsers can scan, edit, and share documents easily.\n\nIt provides a fast and efficient scanning solution.",
     "size": 22,
     "reviews": 800,
     "ratingAvg": 4.3,

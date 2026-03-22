@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 space-x-4 text-xl">
-                    <li><NavLink to={'/'}><span><House></House></span>Home</NavLink></li>
+                    <li><NavLink to={'./'}><span><House></House></span>Home</NavLink></li>
                     <li><NavLink to={'/apps'}><Play></Play>Apps</NavLink></li>
                     <li><NavLink to={'/installation'}><MonitorDown></MonitorDown>Installation</NavLink></li>
                 </ul>

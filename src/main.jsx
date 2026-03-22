@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/",
+        path: '/',
         Component: Home,
         loader: () => fetch('AppData.json')
       },
@@ -29,7 +29,6 @@ const router = createBrowserRouter([
           const res = await axios.get("/AppData.json");
           return res.data;
         },
-
       },
       {
         path: 'app/:appId',
