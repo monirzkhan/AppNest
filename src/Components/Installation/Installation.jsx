@@ -4,13 +4,13 @@ import { useLoaderData } from 'react-router';
 const Installation = () => {
     const appData = useLoaderData();
     return (
-        <div className='py-10 px-8'>
+        <div className='py-10 lg:px-20 px-8 '>
           <div className='border-b-2 border-accent'>
               <div className='text-center py-4'>
                 <h1 className='font-extrabold text-5xl '>Your Installed Apps</h1>
                 <p className='italic text-lg py-4 text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='flex justify-between py-4 px-8'>
+            <div className='flex justify-between py-4 lg:px-8 px-4 items-center'>
                 <div className='font-bold text-2xl'><h1>({appData.length}) Apps Found</h1></div>
                 <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className="btn m-1">Sort By</div>

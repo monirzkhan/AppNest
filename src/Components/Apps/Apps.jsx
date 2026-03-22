@@ -27,8 +27,8 @@ const Apps = () => {
                 <h1 className='font-extrabold text-5xl '>Our All Applications</h1>
                 <p className='italic text-lg py-4 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
-            <div className='flex justify-between py-4 px-20'>
-                <div className='font-bold text-2xl'><h1>({filteredApps.length}) Apps Found</h1></div>
+            <div className='flex justify-between py-4 px-10 lg:px-20 items-center'>
+                <div className='lg:font-bold lg:text-2xl'><h1>({filteredApps.length}) Apps Found</h1></div>
                 <div>
                     <form onSubmit={handleSearch} className="input">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ const Apps = () => {
 
                 </div>
             </div>
-            <div className='grid lg:grid-cols-4  gap-8 w-11/12 mx-auto'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-11/12 mx-auto'>
                 {filteredApps.length > 0 ?
                     filteredApps.map(app => < AppCard key={app.id} app={app}></AppCard>)
                     :
