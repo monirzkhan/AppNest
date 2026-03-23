@@ -6,7 +6,7 @@
     "id": 1,
     "description": "ChatFlow AI is a next-generation conversational assistant built to transform how users interact with digital platforms. Powered by advanced artificial intelligence and natural language processing, it allows users to communicate effortlessly and receive accurate, real-time responses. Whether you need quick answers, automation, or daily task support, ChatFlow AI delivers a seamless and intelligent experience.\n\nThe app is designed with a clean and intuitive interface, making it accessible for users of all levels. From handling customer queries to assisting with personal productivity, ChatFlow AI adapts to different use cases efficiently. Its machine learning capabilities enable it to continuously improve and personalize responses based on user behavior.\n\nBusinesses can leverage ChatFlow AI to automate support systems, enhance engagement, and reduce operational workload. The app also ensures strong data privacy and security, protecting user information at all times.\n\nWith regular updates and feature enhancements, ChatFlow AI remains reliable and future-ready. Whether you're an individual seeking convenience or a business aiming for automation, ChatFlow AI offers a powerful, flexible, and smart communication solution.",
     "size": 45,
-    "reviews": 1200,
+    "reviews": 12000,
     "ratingAvg": 4.5,
     "downloads": 5000000,
     "ratings": [
@@ -24,7 +24,7 @@
     "id": 2,
     "description": "TaskZen is a powerful productivity application designed to help users organize, manage, and complete their daily tasks efficiently. It offers a clean and distraction-free interface that allows users to focus on what truly matters. Whether you're managing personal tasks or complex projects, TaskZen provides all the tools you need to stay organized.\n\nUsers can create task lists, set deadlines, prioritize activities, and receive reminders. The app also supports task categorization and progress tracking, giving users a clear overview of their productivity. Its smart scheduling feature helps optimize time management and improve workflow efficiency.\n\nTaskZen also includes collaboration features, enabling teams to assign tasks, share updates, and work together seamlessly. Cloud synchronization ensures that your data is always accessible across devices.\n\nWith continuous updates and performance improvements, TaskZen remains a reliable solution for productivity management. Whether you're a student, professional, or entrepreneur, TaskZen empowers you to stay focused, organized, and productive.",
     "size": 30,
-    "reviews": 900,
+    "reviews": 90000,
     "ratingAvg": 4.3,
     "downloads": 3000000,
     "ratings": [
@@ -42,7 +42,7 @@
     "id": 3,
     "description": "FitTrack Pro is a comprehensive fitness application designed to help users achieve their health goals. It allows users to track workouts, monitor calories, and analyze performance metrics in real time. Whether you're a beginner or an advanced athlete, FitTrack Pro adapts to your fitness journey.\n\nThe app supports various activities such as cardio, strength training, and daily step tracking. Users can set goals, view progress charts, and stay motivated with reminders. Integration with wearable devices enhances accuracy and provides deeper insights into health data.\n\nFitTrack Pro also offers personalized workout plans and health tips to improve overall well-being. Its user-friendly interface ensures easy navigation and efficient tracking.\n\nWith secure data storage and continuous updates, FitTrack Pro is a reliable fitness companion that helps users stay active, healthy, and motivated every day.",
     "size": 55,
-    "reviews": 1500,
+    "reviews": 150000,
     "ratingAvg": 4.6,
     "downloads": 7500000,
     "ratings": [
@@ -60,7 +60,7 @@
     "id": 4,
     "description": "NoteSnap is a smart note-taking application designed for fast and efficient information capture. It allows users to create notes using text, voice, or images, making it ideal for capturing ideas on the go.\n\nThe app features an intuitive interface, enabling users to organize notes into categories and search them easily. Voice-to-text functionality and image recognition enhance usability and save time.\n\nNoteSnap supports cloud synchronization, ensuring your notes are accessible across devices. It is perfect for students, professionals, and creatives.\n\nWith regular updates and secure storage, NoteSnap provides a reliable and efficient note-taking experience.",
     "size": 25,
-    "reviews": 700,
+    "reviews": 70000,
     "ratingAvg": 4.2,
     "downloads": 2000000,
     "ratings": [
@@ -78,7 +78,7 @@
     "id": 5,
     "description": "TravelMate is a complete travel planning solution that helps users organize trips effortlessly. It provides tools for booking, itinerary planning, and discovering destinations.\n\nUsers can explore travel options, manage bookings, and receive recommendations. The app simplifies travel planning and enhances the overall experience.\n\nWith a user-friendly interface and smart suggestions, TravelMate ensures smooth and enjoyable journeys.",
     "size": 60,
-    "reviews": 1800,
+    "reviews": 180000,
     "ratingAvg": 4.7,
     "downloads": 90000000,
     "ratings": [
@@ -97,7 +97,7 @@
     "id": 6,
     "description": "Foodify is an online food delivery platform that connects users with their favorite restaurants. It offers fast ordering, secure payments, and real-time tracking.\n\nUsers can browse menus, place orders, and enjoy quick delivery services.\n\nFoodify ensures a smooth and convenient food ordering experience.",
     "size": 40,
-    "reviews": 2100,
+    "reviews": 210000,
     "ratingAvg": 4.4,
     "downloads": 1200000,
     "ratings": [
@@ -116,7 +116,7 @@
     "id": 7,
     "description": "MoneyWise helps users manage their finances efficiently. It tracks expenses, budgets, and financial goals.\n\nUsers can analyze spending patterns and plan savings.\n\nMoneyWise offers a simple and secure way to handle personal finances.",
     "size": 35,
-    "reviews": 1100,
+    "reviews": 11000,
     "ratingAvg": 4.5,
     "downloads": 6000000,
     "ratings": [
@@ -135,7 +135,7 @@
     "id": 8,
     "description": "PhotoMaster is a professional photo editing app with advanced tools and filters.\n\nUsers can enhance images, apply effects, and create stunning visuals.\n\nIt offers a complete editing solution for beginners and professionals.",
     "size": 75,
-    "reviews": 2500,
+    "reviews": 25000,
     "ratingAvg": 4.8,
     "downloads": 1500000,
     "ratings": [
@@ -154,7 +154,7 @@
     "id": 9,
     "description": "WeatherNow provides real-time weather forecasts and updates.\n\nUsers can track temperature, rainfall, and conditions easily.\n\nIt ensures accurate and timely weather information.",
     "size": 20,
-    "reviews": 950,
+    "reviews": 95000,
     "ratingAvg": 4.1,
     "downloads": 4000000,
     "ratings": [
@@ -173,7 +173,7 @@
     "id": 10,
     "description": "EduSmart is an educational platform offering interactive courses.\n\nUsers can learn new skills and track progress.\n\nIt provides a flexible and engaging learning experience.",
     "size": 65,
-    "reviews": 1700,
+    "reviews": 170000,
     "ratingAvg": 4.6,
     "downloads": 800000,
     "ratings": [
@@ -192,7 +192,7 @@
     "id": 11,
     "description": "GameHub is a platform to explore trending games.\n\nUsers can discover, play, and review games.\n\nIt provides a fun and engaging gaming experience.",
     "size": 90,
-    "reviews": 3000,
+    "reviews": 300000,
     "ratingAvg": 4.7,
     "downloads": 20000000,
     "ratings": [
@@ -211,7 +211,7 @@
     "id": 12,
     "description": "SecureVPN ensures private and secure internet browsing.\n\nUsers can access restricted content safely.\n\nIt provides fast and reliable VPN services.",
     "size": 28,
-    "reviews": 2200,
+    "reviews": 220000,
     "ratingAvg": 4.5,
     "downloads": 14000000,
     "ratings": [
@@ -230,7 +230,7 @@
     "id": 13,
     "description": "MusicWave allows users to stream music seamlessly.\n\nUsers can explore playlists and enjoy high-quality audio.\n\nIt delivers an immersive music experience.",
     "size": 50,
-    "reviews": 2700,
+    "reviews": 270000,
     "ratingAvg": 4.6,
     "downloads": 1800000,
     "ratings": [
@@ -249,7 +249,7 @@
     "id": 14,
     "description": "ShopEase provides an easy online shopping experience.\n\nUsers can browse products and enjoy fast delivery.\n\nIt ensures convenience and great deals.",
     "size": 48,
-    "reviews": 3100,
+    "reviews": 310000,
     "ratingAvg": 4.4,
     "downloads": 2200000,
     "ratings": [
@@ -268,7 +268,7 @@
     "id": 15,
     "description": "ScanPro is a document scanning app that converts files into digital format instantly.\n\nUsers can scan, edit, and share documents easily.\n\nIt provides a fast and efficient scanning solution.",
     "size": 22,
-    "reviews": 800,
+    "reviews": 80000,
     "ratingAvg": 4.3,
     "downloads": 3500000,
     "ratings": [

@@ -2,20 +2,22 @@ import React from 'react';
 import { useContext } from 'react';
 
 import { AppContext } from '../Root/Root';
+import InstalledCard from './InstalledCard';
+import { Link } from 'react-router';
 
 const Installation = () => {
     const [installed, setInstalled]=useContext(AppContext)
-    console.log(installed);
+    
     
     return (
         <div className='py-10 lg:px-20 px-8 '>
           <div className='border-b-2 border-accent'>
               <div className='text-center py-4'>
-                <h1 className='font-extrabold text-5xl '>Your Installed Apps</h1>
+                <h1 className='font-extrabold lg:text-5xl text-2xl '>Your Installed Apps</h1>
                 <p className='italic text-lg py-4 text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='flex justify-between py-4 lg:px-8 px-4 items-center'>
-                <div className='font-bold text-2xl'><h1>({installed.length}) Apps Found</h1></div>
+                <div className='font-bold lg:text-2xl text-lg'><h1>({installed.length}) Apps Found</h1></div>
                 <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className="btn m-1">Sort By Size</div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
@@ -24,6 +26,24 @@ const Installation = () => {
                     </ul>
                 </div>
             </div>
+          </div>
+          <div>
+            {
+               installed.length>0? installed.map(card=><InstalledCard key={card.id} card={card}></InstalledCard>)
+               : 
+                <div className="col-span-4 text-center  py-10 space-y-4">
+                        <div className='flex justify-center'>
+                            <img src="/src/assets/App-Error.png" alt="" />
+                        </div>
+                        <h1 className="lg:text-5xl text-xl font-bold text-gray-500">
+                            OPPS!! NO APPS INSTALLED
+                        </h1>
+                        <p>The App you are requesting is not installed.  please try to install apps first.</p>
+                        <Link to={'/apps'} className='btn btn-lg btn-secondary text-white'>Go Back</Link>
+
+                    </div>
+                
+            }
           </div>
         </div>
     );

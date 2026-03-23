@@ -17,7 +17,7 @@ const AppDetails = () => {
     const handleInstall = (installData) => {
        
         setInstalled(prev => [...prev, installData]);
-        toast.success("Wow!!! App Installed Successfully");
+        toast.success(`Wow!!! ${title} App Installed Successfully`);
     }
 
     return (
