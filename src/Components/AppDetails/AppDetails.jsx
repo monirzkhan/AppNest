@@ -1,14 +1,24 @@
 import { Download, Star, ThumbsUp } from 'lucide-react';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router';
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { AppContext } from '../Root/Root';
+import { toast } from 'react-toastify';
 
 const AppDetails = () => {
+    const [installed, setInstalled] = useContext(AppContext)
     const appDetailsData = useLoaderData();
 
-    const { title, image, description, downloads, reviews, ratingAvg, companyName, size, ratings } = appDetailsData;
+    const { id, title, image, description, downloads, reviews, ratingAvg, companyName, size, ratings } = appDetailsData;
+    const isAlreadyInstalled = installed.some(installed => installed.id === id);
 
     const barData = [...ratings].reverse()
+
+    const handleInstall = (installData) => {
+       
+        setInstalled(prev => [...prev, installData]);
+        toast.success("Wow!!! App Installed Successfully");
+    }
 
     return (
         <div className='py-10 sm:px-10 px-4'>
@@ -82,7 +92,17 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className='ml-20'>
-                        <Link className=' btn shadow-xl hover:shadow-2xl sm:btn-xl skeleton bg-secondary btn-secondary text-white'>Install Now <span>({size}MB)</span></Link>
+                        <Link onClick={() => handleInstall(appDetailsData)}
+                        
+                            className='btn shadow-xl hover:shadow-2xl sm:btn-xl skeleton bg-secondary
+                         btn-secondary text-white'
+                         disabled={isAlreadyInstalled}>
+                            {
+                                isAlreadyInstalled
+                                    ? 'Installed'
+                                    : `Install Now (${size}MB)`
+                            }
+                        </Link>
                     </div>
                 </div>
 
@@ -107,9 +127,9 @@ const AppDetails = () => {
                 </ResponsiveContainer>
             </div>
             <div>
-             
-              <h1 className='font-bold text-4xl py-4 '>Description</h1>
-              <p className='text-justify'>{description}</p>
+
+                <h1 className='font-bold text-4xl py-4 '>Description</h1>
+                <p className='text-justify'>{description}</p>
             </div>
         </div>
     );

@@ -1,10 +1,14 @@
-import React from 'react';
+import {React, createContext, useState} from 'react';
 import Navbar from '../Header/Navbar';
-import { Outlet, useNavigate, useNavigation } from 'react-router';
+import {Outlet, useNavigation } from 'react-router';
 import Footer from '../Footer/Footer';
+import { ToastContainer } from 'react-toastify';
+
+export const AppContext= createContext('');
 
 const Root = () => {
     const navigation = useNavigation();
+    const [installed, setInstalled]=useState([])
 
     return (
         <div className='md:px-2 sm:px-2 '>
@@ -15,7 +19,10 @@ const Root = () => {
                     <p className="text-2xl font-semibold text-gray-500">Loading Apps...</p>
                 </div>
             ) : (
-                <Outlet />
+                <AppContext value={[installed, setInstalled]}>
+                    <Outlet />
+                    <ToastContainer />
+                </AppContext>
             )}
 
             <Footer />
