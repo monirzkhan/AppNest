@@ -1,11 +1,21 @@
 import { Download, Star } from 'lucide-react';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router';
+import { AppContext } from '../Root/Root';
+
+import { ToastContainer,toast } from 'react-toastify';
 
 const InstalledCard = ({ card }) => {
-    const { title, image, size, ratingAvg, downloads } = card;
+    const { id,title, image, size, ratingAvg, downloads } = card;
+    const [installed, setInstalled]=useContext(AppContext);
+    const uninstalledApp=()=>{
+        const filterApps=installed.filter(data=>data.id!==id);
+        toast.error(`${title} app uninstalled`)
+        setInstalled(filterApps);
+        
+    }
     return (
-        <div className='border-2 border-accent rounded-box my-4 px-4 flex items-center justify-between'>
+        <div className='border-2 border-accent  shadow-lg rounded-box my-4 px-4 flex items-center justify-between'>
             <div className='flex space-x-4 py-4 items-center justify-around '>
                 <div><img src={image} className='lg:h-20 h-16 rounded-box shadow-sm' /></div>
                 <div>
@@ -23,7 +33,7 @@ const InstalledCard = ({ card }) => {
 
             </div>
             <div>
-                <Link className='btn btn-accent md:btn-lg btn-xs lg:btn-lg text-white'>Uninstalled</Link>
+                <Link onClick={()=>uninstalledApp(id)} className='btn btn-accent md:btn-lg btn-xs lg:btn-lg text-white'>Uninstalled</Link>
             </div>
 
         </div>
