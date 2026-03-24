@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useContext } from 'react';
 
 import { AppContext } from '../Root/Root';
@@ -6,7 +6,20 @@ import InstalledCard from './InstalledCard';
 import { Link } from 'react-router';
 
 const Installation = () => {
-    const [installed, setInstalled]=useContext(AppContext)
+    const [installed, setInstalled]=useContext(AppContext);
+    const [sort, setSort]=useState('');
+
+    const handleSort=(type)=>{
+        setSort(type);
+        if(type==='High to Low'){
+            const sortByHighToLow=[...installed].sort((a,b)=>b.downloads-a.downloads);
+            setInstalled(sortByHighToLow);
+        }
+        if(type==='Low to High'){
+            const sortByLowToHigh=[...installed].sort((a,b)=>a.downloads-b.downloads);
+            setInstalled(sortByLowToHigh);
+        }
+    }
     
     
     return (
@@ -19,10 +32,10 @@ const Installation = () => {
             <div className='flex justify-between py-4 lg:px-8 px-4 items-center'>
                 <div className='font-bold lg:text-2xl text-lg'><h1>({installed.length}) Apps Found</h1></div>
                 <div className="dropdown dropdown-hover">
-                    <div tabIndex={0} role="button" className="btn m-1">Sort By Size</div>
+                    <div tabIndex={0} role="button" className="btn m-1">Sort By Size: {sort? sort:''}</div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><a>High to Low</a></li>
-                        <li><a>Low to High</a></li>
+                        <li ><a onClick={()=>handleSort('High to Low')}>High to Low</a></li>
+                        <li onClick={()=>handleSort('Low to High')}><a>Low to High</a></li>
                     </ul>
                 </div>
             </div>

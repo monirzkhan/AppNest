@@ -5,24 +5,38 @@ import { Link } from 'react-router';
 
 const Apps = () => {
     const appData = useLoaderData();
-    const [searchValue, setSearchValue] = useState('')
+    const [searchValue, setSearchValue] = useState('');
+    const [isSearching, setIsSearching]=useState(false)
 
     const handleSearch = (e) => {
         e.preventDefault();
     }
 
     const handleOnChange = (e) => {
+        setIsSearching(true);
         setSearchValue(e.target.value);
-        console.log(searchValue);
-    }
 
+        setTimeout(()=>{
+            setIsSearching(false);
+        }, 200)
+
+    }
+   if (isSearching) {
+    return (
+        <div className="h-screen flex justify-center items-center">
+            <img src="/src/assets/logo.png" className="h-20 animate-spin" />
+        </div>
+    );
+}
     const filteredApps = appData.filter(app =>
         app.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         app.companyName.toLowerCase().includes(searchValue.toLowerCase())
     );
-   
+
     return (
+        
         <div>
+            
             <div className='text-center py-10'>
                 <h1 className='font-extrabold text-5xl '>Our All Applications</h1>
                 <p className='italic text-lg py-4 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
@@ -43,7 +57,7 @@ const Apps = () => {
                                 <path d="m21 21-4.3-4.3"></path>
                             </g>
                         </svg>
-                        <input type="search" name='search' defaultValue={searchValue} onChange={handleOnChange} placeholder="Search Apps" />
+                        <input type="search" name='search' value={searchValue} onChange={handleOnChange} placeholder="Search Apps" />
                     </form>
 
                 </div>
