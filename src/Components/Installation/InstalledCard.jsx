@@ -20,7 +20,6 @@ const InstalledCard = ({ card }) => {
         const storedIds = getInstalledApps();
         const updatedIds = storedIds.filter(appId => appId !== id)
         localStorage.setItem('apps', JSON.stringify(updatedIds));
-
         toast.error(`${title} App uninstalled`);
 
     }

@@ -55,7 +55,7 @@ const Footer = () => {
                 </form>
             </footer>
             <footer className='footer sm:footer-horizontal md:footer-horizontal bg-secondary flex justify-center text-white p-10 "'>
-                <p className='text-center'>@2026, All Rights Reserved</p>
+                <p className='text-center'>@2026, AppNest-All Rights Reserved</p>
             </footer>
 
 
