@@ -1,9 +1,10 @@
 import { Download, Star, ThumbsUp } from 'lucide-react';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link, useLoaderData } from 'react-router';
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { AppContext } from '../Root/Root';
 import { toast } from 'react-toastify';
+import { addAppToLS, getInstalledApps } from '../../Utilities/localstorage';
 
 const AppDetails = () => {
     const [installed, setInstalled] = useContext(AppContext)
@@ -14,9 +15,23 @@ const AppDetails = () => {
 
     const barData = [...ratings].reverse()
 
+    useEffect(() => {
+
+        const installedAppsIds = getInstalledApps();
+        console.log(installedAppsIds);
+        
+
+    }, [appDetailsData])
+
     const handleInstall = (installData) => {
-       
+        if (isAlreadyInstalled) {
+            toast.error("Already Installed!");
+            return;
+        }
+
         setInstalled(prev => [...prev, installData]);
+
+        addAppToLS(installData.id);
         toast.success(`Wow!!! ${title} App Installed Successfully`);
     }
 
@@ -93,10 +108,10 @@ const AppDetails = () => {
                     </div>
                     <div className='ml-20'>
                         <Link onClick={() => handleInstall(appDetailsData)}
-                        
+
                             className='btn shadow-xl hover:shadow-2xl sm:btn-xl skeleton bg-secondary
                          btn-secondary text-white'
-                         disabled={isAlreadyInstalled}>
+                            disabled={isAlreadyInstalled}>
                             {
                                 isAlreadyInstalled
                                     ? 'Installed'

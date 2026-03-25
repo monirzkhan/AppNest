@@ -1,4 +1,4 @@
-import { Component, StrictMode } from 'react'
+import {  StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
@@ -13,18 +13,17 @@ import AppDetails from './Components/AppDetails/AppDetails.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    Component: Root,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        path: '/',
-        Component: Home,
-        loader: () => fetch('AppData.json')
+        element: <Home />,
+        loader: () => fetch('AppData.json'),
       },
       {
-        path: '/apps',
-        Component: Apps,
+        path: 'apps',
+        element: <Apps />,
         loader: async () => {
           const res = await axios.get("/AppData.json");
           return res.data;
@@ -32,25 +31,21 @@ const router = createBrowserRouter([
       },
       {
         path: 'app/:appId',
-        Component: AppDetails,
-        loader:async({params})=>{
-          const res=await axios.get('/AppData.json');
-          const app=res.data.find((p)=>p.id===parseInt(params.appId));
-          return app;
-        }, 
-       
+        element: <AppDetails />,
+        loader: async ({ params }) => {
+          const res = await axios.get('/AppData.json');
+          return res.data.find(
+            (p) => p.id === parseInt(params.appId)
+          );
+        },
       },
       {
-        path: '/installation',
-        Component: Installation,
-        
-       
+        path: 'installation',
+        element: <Installation />,
       },
-    ]
-
-  }
-
-])
+    ],
+  },
+]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 

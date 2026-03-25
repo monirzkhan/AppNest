@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 
 import { AppContext } from '../Root/Root';
 import InstalledCard from './InstalledCard';
 import { Link } from 'react-router';
+import { getInstalledApps } from '../../Utilities/localstorage';
 
 const Installation = () => {
     const [installed, setInstalled]=useContext(AppContext);
     const [sort, setSort]=useState('');
+
+    useEffect(() => {
+           
+            const installedApps = getInstalledApps();
+            const convertedInstalledApps = installedApps.map(id => parseInt(id));
+            const myInstallAppList = installed.filter(app => convertedInstalledApps.includes(app.id));
+            setInstalled(myInstallAppList);
+        }, [])
 
     const handleSort=(type)=>{
         setSort(type);
