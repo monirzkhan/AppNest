@@ -66,7 +66,7 @@ src/
 
 🌍 Live Demo
 
-👉 https://appnest.com
+👉 https://timely-malasada-6c0202.netlify.app/
 
 
 👨‍💻 Author
