@@ -5,14 +5,14 @@ import { Link } from 'react-router';
 const Footer = () => {
     return (
         <footer >
-            <footer className="footer sm:footer-horizontal bg-secondary border-b-1 border-white text-white p-10">
+            <footer className="footer sm:footer-horizontal md:footer-horizontal bg-secondary border-b-1 border-white text-white p-10">
                 <nav className='w-96' >
                     <div className='flex  items-center justify-around gap-2'>
-                        <img src="/src/assets/logo.png" alt="" className='h-20' />
+                        <img src="https://i.ibb.co.com/qSvMvkh/logo.png" alt="" className='h-20' />
                         <h1 className='font-bold text-2xl lg:text-4xl '>AppNext</h1>
                     </div>
-                    <div>
-                        <p className='text-justify'>
+                    <div className='px-8'>
+                        <p className='text-justify '>
                             <b>AppNest</b> iis a smart platform to discover, explore, and install quality apps with ease. We offer a clean interface, fast performance, and trusted app listings. From productivity to entertainment, everything is in one place. Our focus is simplicity, security, and a smooth experience for every user. </p>
                     </div>
                 </nav>
@@ -29,7 +29,7 @@ const Footer = () => {
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
-                <form>
+                <form className=''>
                     <div>
                         <h6 className="footer-title">Newsletter</h6>
                         <fieldset className="w-80">
@@ -54,7 +54,7 @@ const Footer = () => {
                     </div>
                 </form>
             </footer>
-            <footer className='footer sm:footer-horizontal bg-secondary flex justify-center text-white p-10 "'>
+            <footer className='footer sm:footer-horizontal md:footer-horizontal bg-secondary flex justify-center text-white p-10 "'>
                 <p className='text-center'>@2026, All Rights Reserved</p>
             </footer>
 

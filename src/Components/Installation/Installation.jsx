@@ -56,7 +56,7 @@ const Installation = () => {
                : 
                 <div className="col-span-4 text-center  py-10 space-y-4">
                         <div className='flex justify-center'>
-                            <img src="/src/assets/App-Error.png" alt="" />
+                            <img src="https://i.ibb.co.com/TdKqq6V/App-Error.png" alt="" />
                         </div>
                         <h1 className="lg:text-5xl text-xl font-bold text-gray-500">
                             OPPS!! NO APPS INSTALLED

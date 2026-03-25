@@ -19,7 +19,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to={'/'} className="btn btn-ghost text-2xl text-primary"><span>
-                    <img src="/src/assets/logo.png" width={'30px'} alt="" />
+                    <img src="https://i.ibb.co.com/qSvMvkh/logo.png" width={'30px'} alt="" />
                 </span>AppNest</Link>
             </div>
             <div className="navbar-center hidden lg:flex">

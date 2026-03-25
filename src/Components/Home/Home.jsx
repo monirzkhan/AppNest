@@ -22,16 +22,16 @@ const Home = () => {
                         <div className='flex gap-4 justify-center py-6'>
                             <Link to={'https://play.google.com/store/games?hl=en'} target='blank'>
                                 <button className="btn md:text-xl text-white btn-secondary sm:btn-lg">
-                                    <img width={'40px'} src="/src/assets/play.png" alt="" />Google Play</button>
+                                    <img width={'40px'} src="https://i.ibb.co.com/gFZpKKGG/play.png" alt="" />Google Play</button>
                             </Link>
                             <Link to={'https://www.apple.com/app-store/'} target='blank'>
                                 <button className="btn md:text-xl text-white btn-secondary sm:btn-lg">
-                                    <img width={'40px'} src="/src/assets/appstore.png" alt="" />App Store</button>
+                                    <img width={'40px'} src="https://i.ibb.co.com/cS9D6gCN/appstore.png" alt="" />App Store</button>
                             </Link>
 
                         </div>
                         <div className='flex justify-center pt-20 -mb-4'>
-                            <img src="/src/assets/hero.png" alt="" />
+                            <img src="https://i.ibb.co.com/Y7FpsKvr/hero.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const Home = () => {
                 <h1 className='font-extrabold text-5xl '>Trending Apps</h1>
                 <p className='italic text-lg py-4'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid lg:grid-cols-4  gap-8 w-11/12 mx-auto'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 md:gap-25  lg:grid-cols-4 lg:gap-8 w-11/12 mx-auto'>
                 {
                     appData.slice(0,8).map(app=><AppCard key={app.id} app={app}></AppCard>)
                 }

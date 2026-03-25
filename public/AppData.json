@@ -1,6 +1,6 @@
 [
   {
-    "image": "/src/assets/Chat_flow.jpg",
+    "image": "https://i.ibb.co.com/4ZVjSVV3/Chat-flow.jpg",
     "title": "ChatFlow AI - Smart Chat Assistant",
     "companyName": "Nexlify Labs",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "/src/assets/TaskZen.jpg",
+    "image": "https://i.ibb.co.com/GQYG6Qcq/Task-Zen.jpg",
     "title": "TaskZen - Focus Work Manager",
     "companyName": "AppVanta",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "/src/assets/FitTrack Pro.jpg",
+    "image": "https://i.ibb.co.com/Q7ztNMjJ/Fit-Track-Pro.jpg",
     "title": "FitTrack Pro - Smart Fitness Tracker",
     "companyName": "Corelio",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "/src/assets/NoteSnap.png",
+    "image": "https://i.ibb.co.com/nNYhYF4s/Note-Snap.png",
     "title": "NoteSnap - Quick Note Capture",
     "companyName": "Zentrix Apps",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "/src/assets/Travelmet.png",
+    "image": "https://i.ibb.co.com/8nZs5NbL/Travelmet.png",
     "title": "TravelMate - Easy Trip Planner",
     "companyName": "Orbixa",
     "id": 5,
@@ -91,7 +91,7 @@
   },
 
   {
-    "image": "/src/assets/Foodify.png",
+    "image": "https://i.ibb.co.com/7tcWsJNf/Foodify.png",
     "title": "Foodify - Fast Food Delivery",
     "companyName": "AppMint",
     "id": 6,
@@ -110,7 +110,7 @@
   },
 
   {
-    "image": "/src/assets/MoneyWise.png",
+    "image": "https://i.ibb.co.com/DPnKL1kD/Money-Wise.png",
     "title": "MoneyWise - Personal Finance Manager",
     "companyName": "DevSphere",
     "id": 7,
@@ -129,7 +129,7 @@
   },
 
   {
-    "image": "/src/assets/PhotoMaster.png",
+    "image": "https://i.ibb.co.com/kg3WsCSX/Photo-Master.png",
     "title": "PhotoMaster - Pro Photo Editor",
     "companyName": "Veltrix",
     "id": 8,
@@ -148,7 +148,7 @@
   },
 
   {
-    "image": "/src/assets/WeatherNow.png",
+    "image": "https://i.ibb.co.com/qF2yKqdj/Weather-Now.png",
     "title": "WeatherNow - Live Weather Updates",
     "companyName": "AppPilot",
     "id": 9,
@@ -167,7 +167,7 @@
   },
 
   {
-    "image": "/src/assets/EduSmart-1.png",
+    "image": "https://i.ibb.co.com/bMQzNZLg/Edu-Smart-1.png",
     "title": "EduSmart - Learn Skills Easily",
     "companyName": "InnovaApps",
     "id": 10,
@@ -186,7 +186,7 @@
   },
 
   {
-    "image": "/src/assets/GameHub.png",
+    "image": "https://i.ibb.co.com/Z1x4TVdd/Game-Hub.png",
     "title": "GameHub - Discover Play Games",
     "companyName": "Trionex Apps",
     "id": 11,
@@ -205,7 +205,7 @@
   },
 
   {
-    "image": "/src/assets/SecureVPN.png",
+    "image": "https://i.ibb.co.com/yncgW1d5/Secure-VPN.png",
     "title": "SecureVPN - Private Safe Browsing",
     "companyName": "Zyphra Apps",
     "id": 12,
@@ -224,7 +224,7 @@
   },
 
   {
-    "image": "/src/assets/MusicWave.png",
+    "image": "https://i.ibb.co.com/MDZPqkG2/Music-Wave.png",
     "title": "MusicWave - Stream Music Anywhere",
     "companyName": "Fluxora",
     "id": 13,
@@ -243,7 +243,7 @@
   },
 
   {
-    "image": "/src/assets/ShopEase.png",
+    "image": "https://i.ibb.co.com/4gn7mhzy/Shop-Ease.png",
     "title": "ShopEase - Smart Online Shopping",
     "companyName": "AppForgeX",
     "id": 14,
@@ -262,7 +262,7 @@
   },
 
   {
-    "image": "/src/assets/ScanPro.png",
+    "image": "https://i.ibb.co.com/tPZJ2vvb/Scan-Pro.png",
     "title": "ScanPro - Instant Scan Phone",
     "companyName": "AppNest",
     "id": 15,
