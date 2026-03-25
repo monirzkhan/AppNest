@@ -24,7 +24,7 @@ const Apps = () => {
    if (isSearching) {
     return (
         <div className="h-screen flex justify-center items-center">
-            <img src="/src/assets/logo.png" className="h-20 animate-spin" />
+            <img src="https://i.ibb.co.com/qSvMvkh/logo.png" className="h-20 animate-spin" />
         </div>
     );
 }

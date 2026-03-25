@@ -17,7 +17,7 @@ const Root = () => {
             {navigation.state === "loading" ? (
                 <div className="h-screen flex flex-col justify-center items-center gap-6">
                     <img
-                        src="/src/assets/logo.png"
+                        src="https://i.ibb.co.com/qSvMvkh/logo.png"
                         className="h-28 animate-spin"
                         alt="Loading"
                     />
