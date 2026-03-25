@@ -4,19 +4,24 @@ import { Link } from 'react-router';
 import { AppContext } from '../Root/Root';
 
 import { ToastContainer, toast } from 'react-toastify';
+import { getInstalledApps } from '../../Utilities/localstorage';
 
 
 const InstalledCard = ({ card }) => {
     const { id, title, image, size, ratingAvg, downloads } = card;
     const [installed, setInstalled] = useContext(AppContext);
 
-    
-    
+
+
     const uninstalledApp = () => {
         const filterApps = installed.filter(data => data.id !== id);
-        toast.error(`${title} app uninstalled`)
         setInstalled(filterApps);
-        localStorage.removeItem('apps')
+
+        const storedIds = getInstalledApps();
+        const updatedIds = storedIds.filter(appId => appId !== id)
+        localStorage.setItem('apps', JSON.stringify(updatedIds));
+
+        toast.error(`${title} App uninstalled`);
 
     }
     return (

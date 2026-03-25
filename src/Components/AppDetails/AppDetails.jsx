@@ -18,7 +18,15 @@ const AppDetails = () => {
     useEffect(() => {
 
         const installedAppsIds = getInstalledApps();
-        console.log(installedAppsIds);
+           if (installedAppsIds.includes(id)) {
+            setInstalled(prev => {
+                const exists = prev.some(app => app.id === id);
+                if (!exists) {
+                    return [...prev, appDetailsData];
+                }
+                return prev;
+            });
+        }
         
 
     }, [appDetailsData])

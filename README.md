@@ -1,12 +1,76 @@
-# React + Vite
+# 📱 AppNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Fast-yellow?logo=vite)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-Styling-38bdf8?logo=tailwindcss)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Overview
+**AppNest** is a modern and user-friendly web application that allows users to discover, install, and manage trending apps seamlessly. It provides a smooth UI experience with persistent data storage and dynamic app insights.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Features
+
+- 📥 **One-click App Installation**
+- 💾 **LocalStorage Integration** (Data persists after reload)
+- 📊 **Detailed App Analytics** (Downloads, Ratings, Reviews)
+- 🔄 **Install & Uninstall System**
+- 📈 **Sorting Functionality** (High → Low / Low → High)
+- ⚡ **Fast & Responsive UI**
+- 🔔 **Real-time Notifications (Toast)**
+
+---
+
+## 🖼️ UI Highlights
+- Clean and modern design  
+- Fully responsive layout  
+- Interactive charts using Recharts  
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology        | Usage                         |
+|------------------|------------------------------|
+| ⚛️ React         | Frontend Library             |
+| 🌐 React Router  | Routing & Navigation         |
+| 🎨 Tailwind CSS  | UI Styling                   |
+| 📊 Recharts      | Data Visualization           |
+| 🔔 React Toastify| Notifications                |
+| 💾 LocalStorage  | Data Persistence             |
+
+---
+
+## 📂 Project Structure
+src/
+├── Components/
+│ ├── Header/
+│ ├── Footer/
+│ ├── AppCard/
+│ ├── AppDetails/
+│ ├── Apps/
+│ ├── ErrorPage/
+│ ├── Home/
+│ ├── Installation/
+│ ├── Root/
+│
+├── Utilities/
+│ └── localstorage.js
+│
+│
+└── Assets/
+└── Main/
+
+🌍 Live Demo
+
+👉 https://appnest.com
+
+
+👨‍💻 Author
+
+Mohammad Moniruzzaman
+📧 ceo@touchandgreet.com
+
