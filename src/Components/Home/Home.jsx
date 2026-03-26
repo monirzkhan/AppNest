@@ -92,7 +92,7 @@ const Home = () => {
                 <h1 className='font-extrabold text-5xl '>Trending Apps</h1>
                 <p className='italic text-lg py-4'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 md:gap-25  lg:grid-cols-4 lg:gap-8 w-11/12 mx-auto'>
+            <div className='grid sm:grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-8 w-11/12 mx-auto px-2'>
                 {
                     appData?.slice(0,8).map(app=><AppCard key={app.id} app={app}></AppCard>)
                 }
