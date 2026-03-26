@@ -57,13 +57,13 @@ const AppDetails = () => {
                     </div>
                     <div>
                         <div className=' flex justify-center'>
-                            <div className="stats stats-vertical md:stats-horizontal lg:stats-horizontal my-8 text-center  lg:px-20 ">
+                            <div className="stats md:stats-horizontal lg:stats-horizontal my-8 text-center  lg:px-20 ">
 
                                 <div className="stat">
                                     <div className="stat-figure  flex justify-center items-center ">
 
-                                        <div className='space-y-2'>
-                                            <Download className='size-8 ml-6'></Download>
+                                        <div className='space-y-2 '>
+                                            <Download className='size-8 ml-7'></Download>
                                             <div className="stat-title text-xl"> Downloads</div>
                                             <div className="stat-value"><p>
                                                 {new Intl.NumberFormat('en-US', {
@@ -82,7 +82,7 @@ const AppDetails = () => {
                                 <div className="stat">
                                     <div className="stat-figure  flex justify-center items-center ">
 
-                                        <div className='space-y-2'>
+                                        <div className='space-y-2 '>
                                             <Star className='size-8 ml-10'></Star>
                                             <div className="stat-title text-xl"> Total Reviews</div>
                                             <div className="stat-value"><p>
@@ -101,7 +101,7 @@ const AppDetails = () => {
                                     <div className="stat-figure  flex justify-center items-center">
 
                                         <div className='space-y-2'>
-                                            <ThumbsUp className='size-8 ml-12'></ThumbsUp>
+                                            <ThumbsUp className='size-8 ml-14'></ThumbsUp>
 
                                             <div className="stat-title text-xl "> Average Ratings</div>
                                             <div className="stat-value">{ratingAvg}</div>

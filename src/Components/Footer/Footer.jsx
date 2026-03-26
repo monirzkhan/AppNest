@@ -5,13 +5,13 @@ import { Link } from 'react-router';
 const Footer = () => {
     return (
         <footer >
-            <footer className="footer sm:footer-horizontal md:footer-horizontal bg-secondary border-b-1 border-white text-white p-10">
-                <nav className='w-96' >
-                    <div className='flex  items-center justify-around gap-2'>
-                        <img src="https://i.ibb.co.com/qSvMvkh/logo.png" alt="" className='h-20' />
+            <footer className="footer lg:px-15 sm:footer-horizontal md:footer-horizontal bg-secondary border-b-1 border-white text-white p-10">
+                <nav className='w-80 lg:w-96 ' >
+                    <div className='flex  items-center justify-around gap-2 '>
+                        <img src="https://i.ibb.co.com/qSvMvkh/logo.png" alt="" className='h-16  lg:h-20' />
                         <h1 className='font-bold text-2xl lg:text-4xl '>AppNext</h1>
                     </div>
-                    <div className='px-8'>
+                    <div className=''>
                         <p className='text-justify '>
                             <b>AppNest</b> iis a smart platform to discover, explore, and install quality apps with ease. We offer a clean interface, fast performance, and trusted app listings. From productivity to entertainment, everything is in one place. Our focus is simplicity, security, and a smooth experience for every user. </p>
                     </div>
