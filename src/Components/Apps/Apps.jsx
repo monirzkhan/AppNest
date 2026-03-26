@@ -6,45 +6,41 @@ import { Link } from 'react-router';
 const Apps = () => {
     const appData = useLoaderData();
     const [searchValue, setSearchValue] = useState('');
-    const [isSearching, setIsSearching]=useState(false)
+    const [isSearching, setIsSearching] = useState(false)
 
     const handleSearch = (e) => {
         e.preventDefault();
     }
 
     const handleOnChange = (e) => {
+        const value=e.target.value;
         setIsSearching(true);
-        setSearchValue(e.target.value);
+        setSearchValue(value);
 
-        setTimeout(()=>{
+        clearTimeout(window.searchTimer);
+        window.searchTimer=setTimeout(() => {
             setIsSearching(false);
-        }, 200)
+        }, 300)
 
     }
-   if (isSearching) {
-    return (
-        <div className="h-screen flex justify-center items-center">
-            <img src="https://i.ibb.co.com/qSvMvkh/logo.png" className="h-20 animate-spin" />
-        </div>
-    );
-}
+   
     const filteredApps = appData.filter(app =>
         app.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         app.companyName.toLowerCase().includes(searchValue.toLowerCase())
     );
 
     return (
-        
+
         <div>
-            
+
             <div className='text-center py-10'>
                 <h1 className='font-extrabold text-5xl '>Our All Applications</h1>
-                <p className='italic text-lg py-4 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
+                <p className='italic text-lg py-4 px-4 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
             <div className='flex justify-between py-4 px-6 lg:px-28 items-center'>
-                <div className='lg:font-bold lg:text-2xl'><h1>({filteredApps.length}) Apps Found</h1></div>
-                <div>
-                    <form onSubmit={handleSearch} className="input">
+                <div className='font-bold lg:text-2xl text-lg'><h1>({filteredApps.length}) Apps Found</h1></div>
+                <div className='relative'>
+                    <form onSubmit={handleSearch} className="input flex items-center gap-2">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g
                                 strokeLinejoin="round"
@@ -57,8 +53,13 @@ const Apps = () => {
                                 <path d="m21 21-4.3-4.3"></path>
                             </g>
                         </svg>
-                        <input type="search" name='search' value={searchValue} onChange={handleOnChange} placeholder="Search Apps" />
+                        <input type="search" name='search' value={searchValue} onChange={handleOnChange} placeholder="Search Apps" className='outline-none' />
                     </form>
+                    {isSearching && (
+                        <div className="h-screen absolute right-3 top-1/2 -translate-y-1/2 flex justify-center items-center">
+                            <img src="https://i.ibb.co.com/qSvMvkh/logo.png" className="h-6 animate-spin" />
+                        </div>
+                    )}
 
                 </div>
             </div>

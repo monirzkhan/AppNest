@@ -37,7 +37,7 @@ const Installation = () => {
           <div className='border-b-2 border-accent'>
               <div className='text-center py-4'>
                 <h1 className='font-extrabold lg:text-5xl text-2xl '>Your Installed Apps</h1>
-                <p className='italic text-lg py-4 text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
+                <p className='italic text-lg py-4 px-4 text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='flex justify-between py-4 lg:px-6 px-4 items-center'>
                 <div className='font-bold lg:text-2xl text-lg'><h1>({installed?.length}) Apps Found</h1></div>
