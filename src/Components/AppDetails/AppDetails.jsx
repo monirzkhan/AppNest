@@ -33,14 +33,14 @@ const AppDetails = () => {
 
     const handleInstall = (installData) => {
         if (isAlreadyInstalled) {
-            toast.error("Already Installed!");
+            toast("Already Installed!");
             return;
         }
 
         setInstalled(prev => [...prev, installData]);
 
         addAppToLS(installData.id);
-        toast.success(`Wow!!! ${title} App Installed Successfully`);
+        toast(`Wow!!! ${title} App Installed Successfully`);
     }
 
     return (
