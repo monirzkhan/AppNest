@@ -17,10 +17,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
-        path:'/',
+        index: true,               
         element: <Home />,
-        loader: () => fetch('AppData.json'),
+        loader: async () => {
+          const res = await axios.get("/AppData.json");
+          return res.data;
+        },
       },
       {
         path: 'apps',

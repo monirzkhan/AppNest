@@ -20,12 +20,12 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='flex gap-4 justify-center py-6'>
-                            <Link to={'https://play.google.com/store/games?hl=en'} target='blank'>
+                            <Link to={'https://play.google.com/store/games?hl=en'} target='_blank'>
                                 <button className="btn md:text-xl text-white btn-secondary sm:btn-lg">
                                     <img width={'40px'} src="https://i.ibb.co.com/gFZpKKGG/play.png" alt="" />Google Play</button>
                             </Link>
-                            <Link to={'https://www.apple.com/app-store/'} target='blank'>
-                                <button className="btn md:text-xl text-white btn-secondary sm:btn-lg">
+                            <Link to={'https://www.apple.com/app-store/'} target='_blank'>
+                                <button className="btn md:text-xl text-white btn-secondary px-6 sm:btn-lg">
                                     <img width={'40px'} src="https://i.ibb.co.com/cS9D6gCN/appstore.png" alt="" />App Store</button>
                             </Link>
 
@@ -87,18 +87,18 @@ const Home = () => {
             </div>
 
             {/* Trending Apps  */}
-           <div className='bg-base-800 py-4'>
+           <div className=' py-4'>
              <div className='text-center py-10'>
                 <h1 className='font-extrabold text-5xl '>Trending Apps</h1>
                 <p className='italic text-lg py-4'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 md:gap-25  lg:grid-cols-4 lg:gap-8 w-11/12 mx-auto'>
                 {
-                    appData.slice(0,8).map(app=><AppCard key={app.id} app={app}></AppCard>)
+                    appData?.slice(0,8).map(app=><AppCard key={app.id} app={app}></AppCard>)
                 }
             </div>
            <div className='w-full mx-auto text-center py-12'>
-             <Link to={'apps'} className=''><button className='btn text-white btn-secondary px-4 text-center'>Show All</button></Link>
+             <Link to={'apps'} className=''><button className='btn text-white btn-secondary btn-lg text-center'>Show All</button></Link>
            </div>
            </div>
         </div>
