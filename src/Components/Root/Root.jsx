@@ -29,21 +29,21 @@ const Root = () => {
 
                 <AppContext.Provider value={[installed, setInstalled]}>
                     <Outlet />
-                    <ToastContainer
-                        position="top-center"
-                        autoClose={2000}
-                        hideProgressBar={false}
-                        newestOnTop
-                        closeOnClick
-                        pauseOnHover
-                        draggable
-                        theme="colored"
-                        style={{ zIndex: 9999 }}
-                    />
+
                 </AppContext.Provider>
 
             )}
-
+            <ToastContainer
+                position="top-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop
+                closeOnClick
+                pauseOnHover
+                draggable
+                theme="colored"
+                style={{ zIndex: 9999 }}
+            />
             <Footer />
         </div>
     );

@@ -33,7 +33,7 @@ const AppDetails = () => {
 
     const handleInstall = (installData) => {
         if (isAlreadyInstalled) {
-            toast("Already Installed!");
+            toast.error("Already Installed!");
             return;
         }
 
