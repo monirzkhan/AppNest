@@ -50,7 +50,7 @@ const Installation = () => {
                 </div>
             </div>
           </div>
-          <div>
+          <div className='py-4'>
             {
                installed.length>0? installed.map(card=><InstalledCard key={card.id} card={card}></InstalledCard>)
                : 

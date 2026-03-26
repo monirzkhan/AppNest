@@ -24,7 +24,7 @@ const InstalledCard = ({ card }) => {
 
     }
     return (
-        <div className='border-2 border-accent  shadow-lg rounded-box my-4 px-4 md:flex lg:flex items-center justify-between'>
+        <div className='border-2 border-accent bg-accent/10 shadow-lg rounded-box my-4 px-4 md:flex lg:flex items-center justify-between'>
             <div className='flex space-x-4 py-4 items-center justify-around '>
                 <div><img src={image} className='h-20 rounded-box shadow-sm' /></div>
                 <div>
@@ -42,7 +42,7 @@ const InstalledCard = ({ card }) => {
 
             </div>
             <div className='py-2'>
-                <Link onClick={() => uninstalledApp(id)} className='btn btn-accent btn-block text-lg md:btn-lg btn-xs lg:btn-lg text-white'>Uninstall</Link>
+                <Link onClick={() => uninstalledApp(id)} className='btn btn-secondary btn-block text-lg md:btn-lg btn-xs lg:btn-lg text-white'>Uninstall</Link>
             </div>
 
         </div>
