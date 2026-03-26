@@ -40,7 +40,7 @@ const AppDetails = () => {
         setInstalled(prev => [...prev, installData]);
 
         addAppToLS(installData.id);
-        toast(`Wow!!! ${title} App Installed Successfully`);
+        toast.success(`Wow!!! ${title} App Installed Successfully`);
     }
 
     return (
