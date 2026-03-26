@@ -39,7 +39,7 @@ const Installation = () => {
                 <h1 className='font-extrabold lg:text-5xl text-2xl '>Your Installed Apps</h1>
                 <p className='italic text-lg py-4 text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='flex justify-between py-4 lg:px-8 px-4 items-center'>
+            <div className='flex justify-between py-4 lg:px-6 px-4 items-center'>
                 <div className='font-bold lg:text-2xl text-lg'><h1>({installed?.length}) Apps Found</h1></div>
                 <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className="btn m-1">Sort By Size: {sort? sort:''}</div>

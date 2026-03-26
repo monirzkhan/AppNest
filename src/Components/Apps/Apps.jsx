@@ -41,7 +41,7 @@ const Apps = () => {
                 <h1 className='font-extrabold text-5xl '>Our All Applications</h1>
                 <p className='italic text-lg py-4 text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
-            <div className='flex justify-between py-4 px-10 lg:px-20 items-center'>
+            <div className='flex justify-between py-4 px-6 lg:px-28 items-center'>
                 <div className='lg:font-bold lg:text-2xl'><h1>({filteredApps.length}) Apps Found</h1></div>
                 <div>
                     <form onSubmit={handleSearch} className="input">
