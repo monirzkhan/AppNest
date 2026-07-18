@@ -33,9 +33,6 @@ https://app-nest-alpha.vercel.app/
 
 ---
 
-# 📸 Screenshots
-
-> Replace these images with your own project screenshots.
 
 ## 🏠 Home Page
 
@@ -150,7 +147,7 @@ src/
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/appnest.git
+git clone https://github.com/monirzkhan/appnest.git
 ```
 
 Navigate to the project directory
